@@ -1,0 +1,111 @@
+footer{
+    padding: 1rem 10rem;
+    padding-right:7rem;
+    width:100%;
+}
+.footer-info{
+
+    padding:2rem 0;
+    position: relative;
+    display: flex;
+    gap:2rem;
+    justify-content: space-evenly;
+    color:var(--info-text-color);
+    font-family:Arial, Helvetica, sans-serif;
+}   
+.footer-text{
+    line-height: 18px;
+    font-size:16px;
+}
+.footer-info-text{
+    display: flex;
+    flex-direction:column;
+  
+}
+.footer-title{
+    font-size:20px;
+    font-family: flamabook;
+    text-shadow: .3px .3px black;
+    line-height: 30px;
+    color:var(--footer-title-color);
+    font-weight: 700;
+}
+.footer-link{
+    width:fit-content;
+    text-decoration: none;
+    line-height: 24px;
+    letter-spacing: 1px;
+    cursor:pointer;
+}
+.footer-link:visited{
+    color:var(--info-text-color)
+}
+.footer-link:hover{
+    color:var(--hover-color);
+    font-weight: 700;
+    font-size:17px;
+}
+.footer-social-links{
+    display: flex;
+    flex-direction: column;       
+}
+
+@media screen and (max-width:768px){
+    footer{
+        padding:1rem 2rem;
+    }
+    .footer-info-text:last-child{
+        width:100%;
+        display: block;
+        position: absolute;
+        top:100%;
+        left:0;
+        text-align: center;
+        opacity: .7;
+        background-color: #f1f1f1;
+        padding:.8rem 0;
+        border-top: 1px solid black;
+    }
+    .footer-title{
+        font-size: 18px;
+        line-height: 20px;
+        padding-bottom:5px;
+         text-shadow: .1px .1px black;
+    }
+    .footer-text{
+        font-size:13px;
+        line-height: 15px;
+    }
+    .footer-link{
+        font-size:14px;
+        line-height: 17px;
+        padding-top:.5rem;
+    }
+    .footer-link:hover{
+        font-size:15px;
+    }
+   
+}
+
+@media screen and (max-width:484px)
+{
+    .footer-info{
+            
+            flex-wrap:wrap;
+            flex-direction: row;
+            gap:1rem;
+    }
+    .footer-info-text{
+        width:100%;
+        align-items: center;
+    }
+    .footer-social-links{
+        flex-direction: row;
+    }
+    .footer-link{
+        padding:.3rem;
+    }
+    .footer-title{
+        padding:.5rem;
+    }
+}

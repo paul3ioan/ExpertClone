@@ -1,0 +1,130 @@
+.section-first-part{
+    flex-wrap: wrap;
+    display:flex;
+    width:100%;
+    padding:1rem 10rem;
+    padding-right:6rem;
+}
+.section-text{
+    width:35%;
+    padding-right: 1rem;
+    height:auto;
+}
+.section-pictures{
+    width:65%;
+}
+.section-info-text{
+    width:100%;
+    color:var(--info-text-color);
+    font-family:flamabook;
+    font-size:20px;
+    padding-top:10px;
+}
+.section-text-table{
+    padding-left:20px;
+}
+.section-link{
+    color:var(--hover-color);
+    font-size:28px;
+    font-family: flamabook;
+    text-decoration: none;
+    cursor:pointer;
+}
+.pictures-first-line
+{
+    gap:1rem;
+    padding : 0 1rem;
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+.picture-first-line
+{
+    height:220px;
+    width:290px;
+}
+.pictures-image{
+    height:100%;
+    width:100%;
+}
+.pictures-second-line{
+    padding:1rem;
+}
+.pictures-last-line{
+    justify-content: center;
+    padding-right: 1rem;
+    width: 100% ;
+}
+
+
+@media screen and (max-width:1500px)
+{
+    .picture-first-line{
+        height:250px;
+        width:400px;
+    }
+}
+@media screen and (min-width:1300px)
+{
+    .picture-first-line{
+        height:300px;
+        width:600px;
+    }
+}
+@media screen and (max-width: 1056px){
+    .picture-first-line
+    {
+        height:180px;
+        width:250px;
+    }   
+}
+@media screen and (max-width: 930px){
+    .picture-first-line
+    {
+        height:170px;
+        width:270px;
+    }  
+    .section-info-text{
+        font-size:17px;
+
+    } 
+    .section-first-part{
+        padding:1rem 8rem;
+    }
+    .section-text{
+        width:30%;
+    }
+    .section-pictures{
+        width:70%;
+    }
+    .pictures-last-line{
+        padding-top: 1rem;
+    }
+}
+@media screen and (max-width:768px)
+{
+    .section-first-part{
+        flex-direction: column;
+        padding:1rem;
+    }
+    .section-text{
+        width: 100%;
+    }
+    .section-pictures{
+        width: 100%;
+        padding-top: 1rem;
+        padding-bottom: 0;
+    }
+    .picture-first-line{
+        padding:0;
+    }
+    .pictures-last-line{
+        padding:0 1rem;
+    }
+}
+@media screen  and (max-width:430px){
+    .picture-first-line{
+        height:120px;
+        width:170px;
+    }
+}
